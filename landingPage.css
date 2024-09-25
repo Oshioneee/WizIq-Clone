@@ -430,3 +430,10 @@ fieldset p{
 }
 
 
+/*-------------------------------------------*/
+
+.slider .slides .slid{
+    justify-content: center;
+    text-align: center;
+    padding: 20px           ;
+}
