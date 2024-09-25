@@ -1,0 +1,155 @@
+body {
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+/* background-color: #fff; */
+font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+/* width: 100%; */
+padding: 10px 70px;
+display: flex;
+justify-content: space-between; 
+position: relative;
+/* background-color: #fff; */
+/* background-color: #f9f9f9; */
+background: linear-gradient(to bottom, #f9f9f9 80%, #ffffff 100%);
+/* align-items: baseline; */
+}
+
+/* header .links1 a:not(.a1)::before  {
+content: '|'; 
+color: grey;
+padding-right: 10px;
+} */ /* This will be the vertical line */
+
+.links1 a:not(.a1) {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+}
+
+/* header .links1 a:first-child::before {
+content: none;  
+} */  /* Removes the line before the first link */
+
+
+#wiziq-logo{
+  margin-top: 15px;
+}
+
+
+nav {
+position:relative;
+}
+
+
+header .links1{
+display: flex;
+list-style-type: none;
+gap: 10px;
+justify-content: right;
+padding-right: 20px;
+}
+
+header .links1 :hover{
+color: blue;
+}
+
+header .links2{
+display: flex;
+list-style-type: none;
+gap: 25px;
+padding-right: 10px;
+/* position: absolute; */
+align-items: baseline;
+/* font-family: Arial, Helvetica, sans-serif; */
+font-family: 'Roboto', sans-serif !important;
+color: black;
+font-style: bold;
+margin-top: 5px;
+}
+
+header .links a{
+text-decoration: none;
+color: black;
+display: block;
+}
+
+header .links1 a{
+color: gray;
+font-size: smaller;
+}
+
+header .links2 a{
+font-size: small;
+}
+
+
+.links .links2 .dropdown ul {
+  display: none;  
+  background-color: white;
+  position: absolute; /* Takes the dropdown out of normal flow */
+  list-style-type: none;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.links .links2 .dropdownSLN .UL { /*for solutions*/
+  display: none;  
+  background-color: white;
+  position: absolute; /* Takes the dropdown out of normal flow */
+  list-style-type: none;
+  justify-content: space-between; /* Ensures the columns stay apart */
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+.links .links2 .dropdownSLN .UL li{
+  list-style-type: none;
+}
+
+
+.links .links2 .dropdown:hover ul{
+/* padding: 10px 20px; */
+padding: 20px 30px;
+justify-content: center;
+display: grid; 
+grid-template-columns: repeat(2, 1fr); 
+gap: 20px;
+box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1); 
+
+}
+
+.links .links2 .dropdownSLN:hover .UL { /*for solutions*/
+/* padding: 10px 20px; */
+padding: 20px 30px;
+justify-content: center;
+display: grid; 
+grid-template-columns: repeat(2, 1fr);  
+gap: 20px;
+box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1); 
+
+}
+
+/* .links .links2 .dropdownSLN:hover .UL li{ */
+  /* padding: auto; */
+  /* padding-left: auto; */
+/* } */
+
+/* .soln{
+  width: 50%;
+} */
+
+
+
+#button {
+color: white;
+background-color: #FF8C00;
+border: 2px solid #FF8C00;
+border-radius: 30px;
+padding: 5px 10px;
+}
+
