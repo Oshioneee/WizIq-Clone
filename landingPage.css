@@ -96,7 +96,6 @@ main .md2 ul{
     flex-direction: column;
     margin-right: -111px; /* Space between links and image */
     z-index: 10; /*to bring the links above the image */
-
     
 }
 
@@ -134,25 +133,6 @@ main .md2 a img {
     height: auto;
     position: relative;
 }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .md2 {
-                flex-direction: column; /* Stack the links and image on smaller screens */
-                text-align: center;
-            }
-
-            main .md2 ul {
-                position: relative; /* On mobile, set the links to relative for normal flow */
-                margin-right: 0; /* Reset margin on mobile */
-                background-color: transparent; /* Remove background on mobile if needed */
-            }
-
-            main .md2 a img {
-                margin-top: 20px;
-            }
-        }
-
 
 
 /*--------------------------------------------------------------------*/
@@ -268,6 +248,18 @@ hr{
 
 
 
+.dimgs{
+    float: left;
+    height: 120px;
+    overflow: hidden;
+}
+
+
+.dimgs1{
+    float: left;
+    height: 120px;
+    overflow: hidden;
+}
 
 
 
@@ -314,7 +306,10 @@ hr{
     padding: 20px;
 }
 
-
+.d1b h4{
+    margin: auto;
+    text-align: center;
+}
 
 /* SLIDER STYLE */
 
@@ -349,7 +344,7 @@ fieldset.displaySlide{
 fieldset p{
     font-weight: 100;
 }
-button{
+.btns{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -365,6 +360,57 @@ button{
     right: 0;
 }
 
+
+
+
+
+@media (max-width:1024px) {
+    
+    
+    
+}
+@media (max-width:760px) {
+   .slides {
+        width: 100%;
+    }
+    .md2 {
+        flex-direction: column; /* Stack the links and image on smaller screens */
+        text-align: center;
+    }
+
+    main .md2 ul {
+        position: relative; /* On mobile, set the links to relative for normal flow */
+        margin-right: 0; /* Reset margin on mobile */
+        background-color: transparent; /* Remove background on mobile if needed */
+    }
+
+    main .md2 a img {
+        margin-top: 20px;
+    }
+
+    .dimgs{
+        float: none;
+    
+    }
+    .dimgs1{
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .d1b p{
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+    .bpic{
+        display: none;
+    }
+    
+}
+
 @media (max-width:500px) {
     fieldset.displaySlide{
         width: 80%;
@@ -373,15 +419,14 @@ button{
     .slider{
         width: 90%;
     }
-    
-}
-
-@media (max-width:760px) {
-   .slides {
-        width: 100%;
+    .d1b{
+        grid-template-columns: repeat(1, 1fr); 
     }
+    .d2b{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    
 
-    
-    
-    
 }
+
+
