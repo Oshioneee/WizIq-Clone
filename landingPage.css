@@ -273,9 +273,10 @@ hr{
 
 
 /*-----------------------------------------------------------------*/
-/* #div5 {
-    padding: 50px 0px;
-} */
+#div5 div{
+    /* padding: 50px 0px; */
+    position: relative;
+}
 
 .d5a{
     text-align: center;
@@ -409,6 +410,11 @@ fieldset p{
         display: none;
     }
     
+    #div5 div{
+        flex-direction: column; 
+        text-align: center;
+    }
+
 }
 
 @media (max-width:500px) {
@@ -426,6 +432,10 @@ fieldset p{
         grid-template-columns: repeat(1, 1fr); 
     }
     
+    #div5 div{
+        flex-direction: column; 
+        text-align: center;
+    }
 
 }
 
